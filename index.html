@@ -5,28 +5,24 @@
     <title>Stem</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="intro-body">
 
-<div class="intro">
-    <div class="logo-anim">
-        🎮
+    <div class="intro">
+        <img src="images/logo.png" class="logo-anim" alt="Logo">
+        <h1 class="intro-title">Stem</h1>
+        <p class="intro-sub">Twoje centrum moich gier</p>
     </div>
 
-    <h1 class="intro-title">Stem</h1>
-    <p class="intro-sub">Twoje centrum moich gier</p>
-</div>
+    <script>
+        setTimeout(() => {
+            document.body.classList.add("fade-out");
+        }, 2500);
 
-<script>
-    // czas trwania intro (ms)
-    setTimeout(() => {
-        document.body.classList.add("fade-out");
-    }, 3000);
-
-    // przejście do strony głównej
-    setTimeout(() => {
-        window.location.href = "store.html";
-    }, 3800);
-</script>
+        setTimeout(() => {
+            window.location.href = "store.html";
+        }, 3300);
+    </script>
 
 </body>
 </html>
